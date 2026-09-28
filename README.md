@@ -1,48 +1,48 @@
 # RubikCode
 
-Web de RubikCode, estudio freelance de desarrollo web para negocios locales en Miami (salones, barberías, clínicas dentales…). Sitio de una sola página, bilingüe (inglés / español).
+Website for RubikCode, a freelance web development studio building sites for local businesses in Miami (salons, barbershops, dental clinics…). Single-page, bilingual site (English / Spanish).
 
 **Stack:** React 19 · TypeScript · Vite · Tailwind CSS v4 · lucide-react
 
-## Arrancar el proyecto
+## Getting started
 
-Requisitos: Node.js (y npm).
+Requirements: Node.js (and npm).
 
 ```bash
-npm install     # solo la primera vez o tras cambiar dependencias
-npm run dev     # servidor de desarrollo en http://localhost:5173
+npm install     # first time only, or after changing dependencies
+npm run dev     # dev server at http://localhost:5173
 ```
 
 ## Scripts
 
-| Comando           | Qué hace                                                    |
-| ----------------- | ----------------------------------------------------------- |
-| `npm run dev`     | Servidor de desarrollo con recarga en caliente              |
-| `npm run build`   | Chequeo de tipos (`tsc`) + build de producción en `dist/`   |
-| `npm run preview` | Sirve `dist/` en local para revisar la build final          |
+| Command           | What it does                                              |
+| ----------------- | --------------------------------------------------------- |
+| `npm run dev`     | Development server with hot reload                        |
+| `npm run build`   | Type check (`tsc`) + production build into `dist/`        |
+| `npm run preview` | Serves `dist/` locally to review the production build     |
 
-## Estructura
+## Project structure
 
 ```
-index.html              # HTML base (SEO, meta tags; %SITE_URL% se reemplaza en build)
-vite.config.ts          # Plugins de Vite + plugin `seo()` que inyecta el JSON-LD
-public/                 # Estáticos: favicon e imágenes del hero
+index.html              # Base HTML (SEO, meta tags; %SITE_URL% is replaced at build time)
+vite.config.ts          # Vite plugins + `seo()` plugin that injects the JSON-LD
+public/                 # Static assets: favicon and hero images
 src/
-  main.tsx              # Punto de entrada
-  App.tsx               # Composición de secciones de la página
-  config.ts             # Datos de contacto (WhatsApp, email, URL del sitio)
-  index.css             # Estilos globales / tema de Tailwind
+  main.tsx              # Entry point
+  App.tsx               # Page sections layout
+  config.ts             # Contact details (WhatsApp, email, site URL)
+  index.css             # Global styles / Tailwind theme
   components/           # Header, Hero, Services, About, Projects, Process, Contact, Footer…
   i18n/
-    translations.ts     # Textos en inglés y español
-    LanguageContext.tsx # Contexto de idioma (se guarda en localStorage)
+    translations.ts     # English and Spanish copy
+    LanguageContext.tsx # Language context (persisted in localStorage)
 ```
 
-## Configuración
+## Configuration
 
-- **Datos de contacto:** edita `src/config.ts`. Es la única fuente de verdad; la app y el JSON-LD de `index.html` (vía `vite.config.ts`) los leen de ahí.
-- **Textos:** edita `src/i18n/translations.ts`. Cualquier clave nueva debe añadirse en ambos idiomas (`en` y `es`).
+- **Contact details:** edit `src/config.ts`. It is the single source of truth; both the app and the JSON-LD in `index.html` (via `vite.config.ts`) read from it.
+- **Copy:** edit `src/i18n/translations.ts`. Any new key must be added in both languages (`en` and `es`).
 
-## Despliegue
+## Deployment
 
-`npm run build` genera un sitio estático en `dist/` que se puede subir a cualquier hosting estático (Netlify, Vercel, Cloudflare Pages, GitHub Pages…).
+`npm run build` outputs a static site to `dist/` that can be deployed to any static host (Netlify, Vercel, Cloudflare Pages, GitHub Pages…).
