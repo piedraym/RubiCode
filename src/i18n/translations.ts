@@ -107,7 +107,7 @@ const en = {
     label: 'How I work',
     title: 'Four simple steps, no surprises.',
     steps: [
-      { title: "Let's talk", text: 'A 15-minute call to understand your business, your customers and what you need.' },
+      { title: "Let's talk", text: 'To understand your business, your customers and what you need.' },
       { title: 'Proposal & mockup', text: 'You get a proposal with a clear price and a mockup of your future site.' },
       { title: 'Design & development', text: 'I build your site and share progress with you so you can give feedback along the way.' },
       { title: 'Launch', text: 'Your site goes live, connected to Google and WhatsApp, and I show you how it works.' },
@@ -235,7 +235,7 @@ const es: Translations = {
     label: 'Cómo trabajo',
     title: 'Cuatro pasos sencillos, sin sorpresas.',
     steps: [
-      { title: 'Conversamos', text: 'Una llamada de 15 minutos para entender tu negocio, tus clientes y lo que necesitas.' },
+      { title: 'Conversamos', text: 'Para entender tu negocio, tus clientes y lo que necesitas.' },
       { title: 'Propuesta y maqueta', text: 'Recibes una propuesta con precio claro y una maqueta de tu futura web.' },
       { title: 'Diseño y desarrollo', text: 'Construyo tu web y te comparto el avance para que opines durante el proceso.' },
       { title: 'Publicación', text: 'Tu web sale al aire, conectada a Google y WhatsApp, y te enseño cómo funciona.' },
