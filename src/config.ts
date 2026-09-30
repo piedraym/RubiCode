@@ -4,9 +4,9 @@
 /** WhatsApp number in international format, digits only (country code + number). */
 export const WHATSAPP_NUMBER = '17864053462'
 
-export const EMAIL = 'mpiedray@gmail.com'
+export const EMAIL = 'hola@rubikcode.dev'
 
-export const SITE_URL = 'https://rubikcode.pages.dev'
+export const SITE_URL = 'https://rubikcode.dev'
 
 /** "17864053462" -> "(786) 405-3462" */
 export function formatUSPhone(digits: string): string {
